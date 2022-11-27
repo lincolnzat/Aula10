@@ -1,0 +1,55 @@
+.body{
+    background-color: gray;
+    display: grid;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 39% 39% 18%;
+    grid-template-rows: 50px 250px 300px 50px;
+    grid-template-areas: "nav nav nav"
+                          "header header aside"
+                          "section1 section2  aside"
+                          "footer footer footer";
+   gap: 20px;
+
+}
+
+.item{
+    border: 2px solid black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    background-color: grey;
+    border-radius: 13px;
+
+}
+
+.nav{
+    background-color: rgb(207, 151, 207);
+    grid-area: nav;
+}
+
+.header{
+    background-color: rgb(166, 233, 166);
+    grid-area: header;
+}
+
+.aside{
+    background-color: rgb(230, 103, 103);
+    grid-area: aside;
+}
+
+.section1{
+    background-color: rgb(214, 118, 214);
+    grid-area: section1;
+}
+.section2{
+    background-color: rgb(214, 118, 214);
+    grid-area: section2;
+}
+
+.footer {
+    background-color: rgb(229, 229, 151);
+    grid-area: footer;
+}
